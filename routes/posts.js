@@ -6,10 +6,11 @@ const studData = require('../models/studData');
 const uploadMiddleware = require('../middlewares/multerMiddleware');
 
 const router = express.Router();
-
+const multer = require('multer');
+const upload = multer();
 //save details
 
-router.post('/detail/save', (req,res)=>{
+router.post('/detail/save',upload.single('image'), (req,res)=>{
     console.log(req.body)
 
     let newDetails = new Details(req.body);

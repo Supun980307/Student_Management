@@ -48,7 +48,7 @@ const Create = () => {
                         <div className="col-lg-12">
                             <div className="form-group">
                                 <label>Student ID</label>
-                                <input type="text" name="id" value={_id} onChange={e=>setId(e.target.value)} className="form-control"/>
+                                <input type="text" name="id" value={id} onChange={e=>setId(e.target.value)} className="form-control"/>
                             </div>
 
                             <div className="col-lg-12">
@@ -72,7 +72,7 @@ const Create = () => {
                             <div className="col-lg-12">
                                 <div className="form-group">
                                     <label>Status</label>
-                                    <input type="text" name="status" value={status} onChange={e=>setFaculty(e.target.value)} className="form-control"/>
+                                    <input type="text" name="status" value={status} onChange={e=>setStatus(e.target.value)} className="form-control"/>
                                 </div>
                             </div>
                             {/* <div className="col-lg-12">
